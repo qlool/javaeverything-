@@ -1,4 +1,4 @@
-package com.qlool.test;
+package com.qlool.thread.test;
 
 public class ThreadSleepTest {
     public static void main(String[] args) {
