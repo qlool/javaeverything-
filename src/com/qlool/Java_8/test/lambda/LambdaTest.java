@@ -31,5 +31,5 @@ public class LambdaTest {
     public static void newRun(){
         new Thread(() -> System.out.println("In Java8, Lambda expression rocks !!")).start();
     }
-    
+
 }
