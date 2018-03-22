@@ -28,8 +28,10 @@ public class LambdaTest {
         //mapTest();
         //sumTest();
         //mapReduceTest();
-        predicateTest();
+        //predicateTest();
+        predicateTest1();
     }
+
 
     /**
      * 1.替代匿名内部类
@@ -159,6 +161,8 @@ public class LambdaTest {
 
     /**
      * 6. 与函数式接口Predicate配合
+     * jdk8 定义:java.util.function
+     * 提供predicate
      * 使用lambda表达式和函数式接口Predicate
      */
     public static void lambdatest3(){
@@ -193,6 +197,18 @@ public class LambdaTest {
     }
 
 
+    /**
+     * 如何在lambda表达式中加入Predicate
+     */
+    public static void predicateTest1(){
+        List languages = Arrays.asList("Java", "a", "C++", "Haskell", "Lisp");
+            Predicate<String> eq  = n-> n.equals("Java");
+            Predicate<String> start  = n-> n.startsWith("J");
+            languages.stream().filter(eq.and(start)).forEach(System.out :: println);
+    }
+    // 类似地，也可以使用 or() 和 xor() 方法
 
+
+    // collect Collectors
 
 }
