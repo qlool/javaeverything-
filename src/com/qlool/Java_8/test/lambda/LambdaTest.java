@@ -1,8 +1,13 @@
 package com.qlool.Java_8.test.lambda;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
+import java.util.function.DoubleSupplier;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -18,19 +23,7 @@ import java.util.stream.Stream;
  */
 public class LambdaTest {
 
-    public static void main(String[] args) {
-        //olderRun();
-        //newRun();
-        //lambdatest1();
-        //lambdatest2();
-        //lambdatest1();
-        //lambdatest2();
-        //mapTest();
-        //sumTest();
-        //mapReduceTest();
-        //predicateTest();
-        predicateTest1();
-    }
+
 
 
     /**
@@ -210,5 +203,35 @@ public class LambdaTest {
 
 
     // collect Collectors
+
+
+    public static void lambdaTest5(){
+        DoubleSupplier doubleSupplier = () -> 10;
+        double asDouble = doubleSupplier.getAsDouble();
+        System.out.println(asDouble);
+
+        Runnable runnable = () -> System.out.println("i");
+        runnable.run();
+
+
+        BinaryOperator<Integer>  add = (x, y)-> x+y;
+        Integer apply = add.apply(1, 2);
+        System.out.println(apply);
+
+    }
+    public static void main(String[] args) {
+        //olderRun();
+        //newRun();
+        //lambdatest1();
+        //lambdatest2();
+        //lambdatest1();
+        //lambdatest2();
+        //mapTest();
+        //sumTest();
+        //mapReduceTest();
+        //predicateTest();
+        //predicateTest1();
+        lambdaTest5();
+    }
 
 }
