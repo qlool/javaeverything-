@@ -226,7 +226,7 @@ public class LambdaTest {
         //mapTest();
         //sumTest();
         //mapReduceTest();
-        //predicateTest();
+        //ProjectTest3();
         //predicateTest1();
         lambdaTest5();
     }

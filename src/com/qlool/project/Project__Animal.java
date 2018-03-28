@@ -1,7 +1,9 @@
 package com.qlool.project;
 
 /**
- * 0.父类
+ *  3.构造方法引用
+ *
+ * 3.1.父类
  */
 public class Project__Animal {
 
@@ -18,7 +20,7 @@ public class Project__Animal {
 }
 
 /**
- * 1.定义子类
+ * 3.2.定义子类
  */
 class Bird extends Project__Animal {
 
@@ -33,7 +35,7 @@ class Bird extends Project__Animal {
 }
 
 /**
- * 2.定义子类
+ * 3.3.定义子类
  */
 class Dog extends Project__Animal {
 
@@ -48,9 +50,7 @@ class Dog extends Project__Animal {
 }
 
 /**
- * 定义工厂接口：
- *
- * @param <T>
+ * 3.4.定义工厂接口：
  */
 interface Factory<T extends Project__Animal> {
     T create(String name, int age);
