@@ -81,7 +81,7 @@ class test{
         Project__Animal bird = factory.create("bird", 2);
         bird.behavior();
 
-        /**
+        /**q
          * lambda表达式仅仅为了创建两个对象就写了十多号代码，现在我们用构造函数引用试试：
          */
         Factory<Dog> dogFactory =Dog::new;
