@@ -1,8 +1,5 @@
 package com.qlool.Java_8.test.lambda;
 
-import java.math.BigDecimal;
-import java.math.MathContext;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
