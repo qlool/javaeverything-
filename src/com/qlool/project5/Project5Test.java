@@ -20,6 +20,10 @@ public class Project5Test {
         lists.add("b3");
         lists.add("o1");
 
+        //streamMatchTest(lists);
+        //streamCollectTest(lists);
+        //streamCountTest(lists);
+        streamReduceTest(lists);
     }
 
 
@@ -32,8 +36,7 @@ public class Project5Test {
         boolean anyStartWithA = lists.stream().anyMatch((s -> s.startsWith("a")));
         System.out.println(anyStartWithA);
         //流对象中每个元素都匹配就返回true
-        boolean allStartWithA
-                = lists.stream().allMatch((s -> s.startsWith("a")));
+        boolean allStartWithA = lists.stream().allMatch((s -> s.startsWith("a")));
         System.out.println(allStartWithA);
     }
 

@@ -20,7 +20,9 @@ public class Project4Test {
         lists.add("b3");
         lists.add("o1");
 
-        streamFilterTest(lists);
+        //streamFilterTest(lists);
+        //streamSortedTest(lists);
+        streamMapTest(lists);
     }
 
     /**
