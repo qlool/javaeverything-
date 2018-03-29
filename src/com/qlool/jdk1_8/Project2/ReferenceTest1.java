@@ -8,11 +8,14 @@ public class ReferenceTest1 {
 
     public static void main(String[] args) {
         int n = 3;
-        Calculate calculate = param -> {
+        Calculate calculate =  param -> {
             //n=10; //编译错误
             return n + param;
         };
         System.out.println(calculate.calculate(10));
+
+
+
     }
 
 

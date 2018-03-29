@@ -22,8 +22,8 @@ public class Project5Test {
 
         //streamMatchTest(lists);
         //streamCollectTest(lists);
-        //streamCountTest(lists);
-        streamReduceTest(lists);
+        streamCountTest(lists);
+        //streamReduceTest(lists);
     }
 
 

@@ -17,9 +17,9 @@ public class ProjectTest3 {
 
     public static void main(String[] args) {
         //predicateTest();
-        //functionTest();
+        functionTest();
         //supplierTest();
-        consumerTest();
+        //consumerTest();
     }
 
     /**
