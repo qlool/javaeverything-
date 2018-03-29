@@ -23,6 +23,7 @@ public class ReferenceTest2 {
     }
 
     interface Calculate {
+
         int calculate(int value);
     }
 

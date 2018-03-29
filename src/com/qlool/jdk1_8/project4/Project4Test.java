@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 /**
- * stream
+ * stream 中间方法
  */
 public class Project4Test {
 

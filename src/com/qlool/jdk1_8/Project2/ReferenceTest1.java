@@ -13,12 +13,12 @@ public class ReferenceTest1 {
             return n + param;
         };
         System.out.println(calculate.calculate(10));
-
-
-
     }
 
-
+    /**
+     * 函数式接口@FunctionalInterface
+     * 该注解只能标记在"有且仅有一个抽象方法"的接口上。
+     */
     @FunctionalInterface
     interface Calculate {
         int calculate(int value);
