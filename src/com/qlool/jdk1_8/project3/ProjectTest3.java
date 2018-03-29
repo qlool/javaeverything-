@@ -16,7 +16,7 @@ public class ProjectTest3 {
 
 
     public static void main(String[] args) {
-        //predicateTest();
+       // predicateTest();
         functionTest();
         //supplierTest();
         //consumerTest();
@@ -46,9 +46,10 @@ public class ProjectTest3 {
     }
 
     /**
-     * 接收一个参数，返回单一的结果，默认的方法（andThen）可将多个函数串在一起，形成复合Funtion（有输入，有输出）结果
+     * 接收一个参数，返回单一的结果，默认的方法（andThen）可一起，将多个函数串在形成复合Funtion（有输入，有输出）结果
      */
     public static void functionTest() {
+
         Function<String, Integer> toInteger = Integer::valueOf;
         //toInteger的执行结果作为第二个backToString的输入
         Function<String, String> backToString = toInteger.andThen(String::valueOf);

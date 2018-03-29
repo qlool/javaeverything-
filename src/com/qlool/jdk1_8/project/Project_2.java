@@ -29,6 +29,7 @@ public class Project_2 {
     }
 
     static class Helper {
+
         public int String2Int(String from) {
             return Integer.valueOf(from);
         }

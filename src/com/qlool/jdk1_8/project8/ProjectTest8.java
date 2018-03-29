@@ -10,7 +10,7 @@ public class ProjectTest8 {
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        for(int i=0;i<100000;i++)
+        for(int i=0;i<1000000;i++)
             list.add(String.valueOf(i));
 
         parallelStreamTest(list);
