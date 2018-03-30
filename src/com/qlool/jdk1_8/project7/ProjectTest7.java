@@ -10,6 +10,7 @@ public class ProjectTest7{
 
     public static void main(String[] args) {
         Stream<Long> stream = Stream.generate(new NatureSeq());
+
         System.out.println("元素个数："+stream.map((param) -> {return param;}).limit(1000).count());
     }
 }

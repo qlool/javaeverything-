@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 /**
  * stream 中间方法
@@ -30,11 +31,11 @@ public class Project4Test {
      * 结合Predicate接口，Filter对流对象中的所有元素进行过滤,该操作是一个中间操作，这意味着你可以在操作返回结果的基础上进行其他操作。
      */
     public static void streamFilterTest(List<String> lists) {
-        lists.stream().filter((s -> s.startsWith("a"))).forEach(System.out::println);
+        //lists.stream().filter((s -> s.startsWith("a"))).forEach(System.out::println);
 
         //等价于以上操作
-        Predicate<String> predicate = (s) -> s.startsWith("a");
-        lists.stream().filter(predicate).forEach(System.out::println);
+          Predicate<String> predicate = (s) -> s.startsWith("a");
+//        lists.stream().filter(predicate).forEach(System.out::println);
 
         //连续过滤
         Predicate<String> predicate1 = (s -> s.endsWith("1"));
@@ -62,10 +63,12 @@ public class Project4Test {
         lists.stream().map(String::toUpperCase).sorted((a, b) -> b.compareTo(a)).forEach(System.out::println);
 
         System.out.println("自定义映射规则");
+
         Function<String, String> function = (p) -> {
             return p + ".txt";
         };
+        Stream s =  lists.stream().map(String::toUpperCase).map(function).sorted((a, b) -> b.compareTo(a));
         lists.stream().map(String::toUpperCase).map(function).sorted((a, b) -> b.compareTo(a)).forEach(System.out::println);
-
+        System.out.println(lists.toString());
     }
 }

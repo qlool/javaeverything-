@@ -16,10 +16,10 @@ public class ProjectTest3 {
 
 
     public static void main(String[] args) {
-       // predicateTest();
-        functionTest();
+        //predicateTest();
+        //functionTest();
         //supplierTest();
-        //consumerTest();
+        consumerTest();
     }
 
     /**
@@ -66,7 +66,7 @@ public class ProjectTest3 {
         });
 
         Integer res = zero.apply(8);
-        System.err.println(res);
+        System.out.println(res);
     }
 
     /**

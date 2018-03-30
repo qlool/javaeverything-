@@ -53,7 +53,9 @@ class Dog extends Project__Animal {
  * 3.4.定义工厂接口：
  */
 interface Factory<T extends Project__Animal> {
-    T create(String name, int age);
+   T create(String name, int age);
+
+
 }
 
 class test{
